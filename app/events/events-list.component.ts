@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
     template: `
     <div>
         <h2>Upcoming angular2 events-list</h2>
-        <event-thumbnail [event]='event1'></event-thumbnail> 
+        <event-thumbnail #thumbnail [event]='event1'></event-thumbnail> 
+        <h3>{{thumbnail.someProperty}}</h3>
+        <button class="btn btn-primary" (click)="thumbnail.logFoo()">Log me some foo</button>
     </div>
     `
 }) //[event] = gives the event object from event-thumbnail component access to event1

@@ -17,5 +17,10 @@ import { Component, Input } from '@angular/core';
 })
 export class EventThumbnailComponent {
     @Input() event: any //event object
+    someProperty: any = "some value"
+
+    logFoo() {
+        console.log('foo')
+    }
 
 }
