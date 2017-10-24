@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
     // templateUrl: '/app/events/events-list.component.html' //root index.html location
     template: `
     <div>
-        <h2>Upcoming angular2 events-list</h2>
+        <h1>Upcoming Angular2 events 2017</h1>
+        <hr>
         <event-thumbnail #thumbnail [event]='event1'></event-thumbnail> 
         <h3>{{thumbnail.someProperty}}</h3>
         <button class="btn btn-primary" (click)="thumbnail.logFoo()">Log me some foo</button>
